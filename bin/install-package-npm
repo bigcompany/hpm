@@ -4,7 +4,12 @@
 var argv = require('minimist')(process.argv.slice(2));
 
 if (typeof argv.p === "undefined" || argv.p.length === 0) {
-  console.log('Packages parameter required. Please pass in -p argument');
+  console.log('packages parameter required. Please pass in -p argument');
+  process.exit();
+}
+
+if (typeof argv.d === "undefined" || argv.d.length === 0) {
+  console.log('directory parameter required. Please pass in -d argument');
   process.exit();
 }
 
@@ -19,7 +24,7 @@ try {
 
 var packages = require("../");
 
-packages.npm.install(".", { packages: _packages }, function(err, res){
+packages.npm.install(argv.d, { packages: _packages }, function(err, res){
   if (err) {
     console.error(err.message)
   }

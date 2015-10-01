@@ -1,16 +1,19 @@
 {
-  "name": "hook.io-packages",
-  "version": "1.0.0",
+  "name": "hpm",
+  "version": "0.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marak Squires <marak.squires@gmail.com>",
   "license": "MIT",
-  "description": "module that powers the hook.io platform's microservice package installations",
+  "description": "**H**ook **P**ackage **M**anager. Collection of binaries for installing packages using various package managers for various programming languages.",
   "repository": {
     "type": "git",
-    "url": "http://github.com/bigcompany/hook.io-packages.git"
+    "url": "http://github.com/bigcompany/hpm.git"
+  },
+  "bin": {
+    "install-package-npm": "./bin/install-package-npm"
   },
   "dependencies": {
     "minimist": "^1.2.0",

@@ -28,5 +28,5 @@ Hence, `hpm`!
  
 ## Upcoming Support
 
- - `gems` - Provides Ruby support
+ - `bundler` - Provides Ruby Gem support
  - `pip` - Provides Python support

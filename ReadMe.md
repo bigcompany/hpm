@@ -14,7 +14,7 @@ You are encouraged to use this module as-is, or modify it to suite your needs. I
 
 ## Why?
 
-At hook.io, we require that users can easily install dependencies using any package manager.
+At hook.io, we require that users can easily install dependencies for any of our supported programming languages.
 
 In order to seamlessly integrate this functionality into our stack, the interface code for installing packages must be unified, despite the fact that each package manager must be loaded, configured, and run in it's own way.
 

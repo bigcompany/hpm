@@ -27,6 +27,7 @@ Hence, `hpm`!
  - Aims to support multiple well-known package mangers
  - Ships with friendly binaries wrapping each package manager with a unified api
  - Ships with a http server for remote package installations
+   - Should only be run on localhost
  - Ships with simple Event Emitter based broadcast pattern
    - Defaults to Redis backend
  - Can be used programmatically in Node.js applications

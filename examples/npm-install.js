@@ -1,6 +1,6 @@
-var packages = require('../');
+var hpm = require('../');
 
-packages.npm.install(".", {
+hpm.npm.install(".", {
   packages: ["faker"]
 }, function (err, result) {
   console.log(err, result);

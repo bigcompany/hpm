@@ -37,7 +37,7 @@ Hence, `hpm`!
  
 ## Upcoming Support
 
- - `gems` - Provides Ruby support
+ - `bundler` - Provides Ruby Gem support
  - `pip` - Provides Python support
  
 Want to see another package manager supported? Please open a Pull Request and we'd be glad to accept it!

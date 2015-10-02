@@ -1,0 +1,28 @@
+#!/usr/local/bin/node
+
+// parse incoming command line arguments
+var argv = require('minimist')(process.argv.slice(2));
+
+/*
+if (typeof argv.p === "undefined" || argv.p.length === 0) {
+  console.log('packages parameter required. Please pass in -p argument');
+  process.exit();
+}
+
+if (typeof argv.d === "undefined" || argv.d.length === 0) {
+  console.log('directory parameter required. Please pass in -d argument');
+  process.exit();
+}
+*/
+
+var hpm = require('../');
+
+
+hpm.onAny(function(data){
+  console.log('event');
+  console.log(this.event, data)
+});
+
+hpm.server.start({ port: 8888, host: "localhost" }, function (err, app){
+  console.log(err, app.server.address())
+});

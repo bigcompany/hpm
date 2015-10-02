@@ -13,11 +13,14 @@
     "url": "http://github.com/bigcompany/hpm.git"
   },
   "bin": {
-    "install-package-npm": "./bin/install-package-npm"
+    "install-package-npm": "./bin/install-package-npm",
+    "hpm-server": "./bin/hpm-server"
   },
   "dependencies": {
+    "eventemitter2": "^0.4.14",
     "minimist": "^1.2.0",
     "npm": "^3.3.4",
-    "redis": "^0.12.1"
+    "resource-http": "^0.8.1",
+    "stream-buffers": "^2.2.0"
   }
 }

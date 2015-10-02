@@ -54,7 +54,7 @@ Want to see another package manager supported? Please open a Pull Request and we
 
 ```js
 {
-  where: "/path/to/target/install/dir,
+  where: "/path/to/target/install/dir",
   packages: ["amazing-package@latest", "anotherpackage@v1.9.1"]
 }
 ```

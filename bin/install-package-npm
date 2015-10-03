@@ -28,4 +28,5 @@ packages.npm.install(argv.d, { packages: _packages }, function(err, res){
   if (err) {
     console.error(err.message)
   }
+  process.exit();
 });

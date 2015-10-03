@@ -21,6 +21,7 @@
     "minimist": "^1.2.0",
     "npm": "^3.3.4",
     "resource-http": "https://github.com/bigcompany/http/tarball/master",
+    "redis": "0.12.1",
     "stream-buffers": "^2.2.0"
   }
 }

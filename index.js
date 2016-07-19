@@ -12,8 +12,4 @@ hpm.npm = require('./lib/npm');
 hpm.broadcast = require('./lib/broadcast');
 hpm.server = require('./lib/server');
 
-process.nextTick(function(){
-  hpm.broadcast();
-});
-
 module['exports'] = hpm;
